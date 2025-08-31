@@ -1,56 +1,45 @@
-# Build artifacts
-*.o
-*.obj
-*.so
-*.dll
-*.exe
-*.out
+# Node dependencies
+node_modules/
 
-# CMake
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
+# Build output
+dist/
+build/
 
-# Visual Studio
-.vs/
-*.vcxproj*
-*.sln
-*.user
-*.opensdf
-*.sdf
-*.ipch
+# Environment variables
+.env
+.env.local
+.env.*.local
 
-# Qt Creator
-*.pro.user
-*.qbs.user
-*.autosave
-
-# Logs and temp
+# Logs
 *.log
-*.tmp
-*.bak
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS-specific
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-# Git
-.git/
-.gitignore
-
-# IDE configs
+# IDE/editor configs
+.vscode/
 .idea/
 *.swp
 
-# UI assets (optional — if integrating with Figma/React)
-node_modules/
-dist/
-build/
-.env
-*.tsbuildinfo
-*.lock
+# Dependency locks (optional — keep if you want reproducible builds)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# Versioned data (ignore raw, keep validated)
+# Testing
+coverage/
+*.lcov
+
+# Misc
+*.tsbuildinfo
+*.bak
+*.tmp
+
+# Optional: ignore raw data or temp folders if you're syncing with backend
 data/raw/
 data/tmp/
+
